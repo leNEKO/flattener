@@ -1,0 +1,38 @@
+#!/usr/bin/env php
+<?php
+
+namespace Leneko\Flattener;
+
+require dirname(__DIR__, 1) . '/vendor/autoload.php';
+
+use Silly\Application;
+
+$app = new Application('Json (un)flatten');
+
+$app->command(
+    'flatten [path]',
+    function (string $path = 'php://stdin') {
+        echo JsonFlatten::flatten(
+            \file_get_contents($path)
+        );
+    }
+)
+    ->descriptions(
+        'flatten a json structure',
+        ['path' => 'path to read or STDIN if not set']
+    );
+
+$app->command(
+    'unflatten [path]',
+    function (string $path = 'php://stdin') {
+        echo JsonFlatten::unflatten(
+            \file_get_contents($path)
+        );
+    }
+)
+    ->descriptions(
+        'unflatten a json structure',
+        ['path' => 'path to read or STDIN if not set']
+    );;
+
+$app->run();

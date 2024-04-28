@@ -1,0 +1,19 @@
+{
+  "peoples": [
+    {
+      "nom": "Quel",
+      "prenom": "Qun",
+      "age": 46
+    },
+    {
+      "nom": "Per",
+      "prenom": "Sonne",
+      "age": 43
+    }
+  ],
+  "ceci.cela": "machin.patin",
+  "coucou[bisou]": "chou", 
+  "hello": "world",
+  "0": 1,
+  "1": true
+}

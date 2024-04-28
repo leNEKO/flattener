@@ -1,0 +1,11 @@
+{
+  "features": [
+    "coucou"
+  ],
+  "mediatypes": {
+    "image/png": "/core/img/filetypes/image.png",
+    "image/jpeg": "/core/img/filetypes/image.png",
+    "image/gif": "/core/img/filetypes/image.png",
+    "application/postscript": "/core/img/filetypes/image-vector.png"
+  }
+}

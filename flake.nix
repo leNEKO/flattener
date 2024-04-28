@@ -31,7 +31,6 @@
           buildInputs = [
             php
             php.packages.composer
-            php.packages.phpstan
             php.packages.psalm
             pkgs.nodePackages.intelephense
 

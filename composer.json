@@ -1,7 +1,8 @@
 {
     "name": "leneko/flattener",
-    "type": "library",
-    "license": "GPL-3.0",
+    "type": "lib",
+    "description": "(un)flatten php/json data structure",
+    "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Leneko\\Flattener\\": "src/"
@@ -15,9 +16,12 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^8.3"
+        "php": "^8.3",
+        "mnapoli/silly": "^1.9"
     },
     "require-dev": {
-        "ext-xdebug": "*"
-    }
+        "ext-xdebug": "*",
+        "phpunit/phpunit": "^11.1"
+    },
+    "bin": ["bin/json-flatten"]
 }
