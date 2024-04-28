@@ -42,11 +42,10 @@ into
 
 ### CLI
 
-
 Get help
 
 ```shell
-bin/json-unflatten --help
+bin/json-flatten --help
 ```
 
 ## Dev
